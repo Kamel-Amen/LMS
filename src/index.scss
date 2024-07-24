@@ -1,0 +1,839 @@
+/* Start Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+/* End Fonts */
+/* ================================================== */
+/* Start Body */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+body {
+  font-family: 'Playwrite GB S' !important;
+}
+::-webkit-scrollbar {
+  width: 9px;
+  height: 9px;
+}
+::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+::-webkit-scrollbar-thumb {
+  background: #e1e1e1;
+  border: 0px none #ffffff;
+  border-radius: 50px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #ffffff;
+}
+::-webkit-scrollbar-thumb:active {
+  background: #000000;
+}
+::-webkit-scrollbar-track {
+  background: #666666;
+  border: 0px none #ffffff;
+  border-radius: 50px;
+}
+::-webkit-scrollbar-track:hover {
+  background: #666666;
+}
+::-webkit-scrollbar-track:active {
+  background: #333333;
+}
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+/* End Body */
+/* ================================================== */
+/* Start Home */
+.home {
+  /* Start Header */
+  .header {
+    box-shadow: 0 0 10px #aaa !important;
+    .sh-1 {
+      left: 5rem !important;
+    }
+    .sh-2 {
+      left: 15rem !important;
+    }
+    .sh-3 {
+      left: 25rem !important;
+    }
+    .sh-4 {
+      left: 35rem !important;
+    }
+    .sh-5 {
+      left: 49rem !important;
+    }
+  }
+  /* End Header */
+
+  /* Start Welcome */
+  .welcome {
+    height: 42rem;
+    .background-cover {
+      background: url('./assets/opening.jpg') no-repeat top right;
+      background-size: contain;
+      z-index: -1;
+      filter: brightness(50%);
+      -webkit-filter: brightness(50%);
+    }
+    .content {
+      div {
+        padding: 8rem 0 0 5rem;
+        span {
+          font-size: 5rem;
+          background: -webkit-linear-gradient(#eee, #333);
+          background-clip: text;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+        header {
+          font-size: 4rem;
+        }
+        p {
+          font-size: 1.3rem;
+          color: #a1a1a1;
+        }
+        img {
+          margin-left: 1rem;
+        }
+      }
+    }
+  }
+  /* End Welcome */
+
+  /* Start About */
+  .about {
+    height: auto;
+    font-family: 'Arial';
+    .content {
+      header {
+        font-family: 'Anton SC', sans-serif;
+        font-size: 3rem;
+        width: 18rem;
+        border: 2px solid #333;
+        border-width: 2px 0;
+      }
+      .section-1,
+      .section-2,
+      .section-3 {
+        .col-6 {
+          img {
+            width: 30rem;
+            height: 30rem;
+          }
+        }
+      }
+    }
+  }
+  /* End About */
+
+  /* Start Best Seller */
+  .best-seller-section {
+    height: auto;
+    padding-bottom: 10rem;
+    .content {
+      header {
+        width: 27rem;
+        border: 2px solid #333;
+        border-width: 2px 0;
+      }
+      .books {
+        margin-top: 6.5rem;
+        .book {
+          width: 17rem;
+          height: 22rem;
+          border: 3px solid #a1a1a1;
+          padding: 0.25rem;
+          box-shadow: 0;
+          cursor: pointer;
+          transition: all 0.2s linear;
+          -webkit-transition: all 0.2s linear;
+          -moz-transition: all 0.2s linear;
+          &:hover {
+            box-shadow: 0 0 10px #a1a1a1;
+            transform: scale(1.1) rotate(-15deg);
+            -webkit-transform: scale(1.1) rotate(-15deg);
+            -moz-transform: scale(1.1) rotate(-15deg);
+          }
+        }
+      }
+    }
+  }
+  /* End Best Seller */
+
+  /* Start Join */
+  .join {
+    height: auto;
+    padding: 5rem 0;
+    font-family: 'Anton SC', sans-serif;
+    header {
+      width: 11rem;
+      border: 2px solid #333;
+      border-width: 2px 0;
+    }
+    .content {
+      padding-top: 5rem;
+      .cover {
+        img {
+          width: 25rem;
+          height: 25rem;
+        }
+      }
+    }
+  }
+  /* End Join */
+
+  /* Start Copyrights */
+  .footer {
+    font-family: 'Anton SC', sans-serif;
+    height: 4rem;
+    background-color: #222;
+  }
+  /* End Copyrights */
+}
+/* End Home */
+
+/* Start Login */
+.login {
+  .content {
+    .form {
+      font-family: 'Ubuntu', sans-serif !important;
+      .login-form {
+        header {
+          border: 2px solid #000000;
+          border-width: 2px 0 2px 0;
+        }
+      }
+    }
+    .image {
+      padding-top: 6rem !important;
+    }
+  }
+}
+/* End Login */
+
+.account,
+.books {
+  font-family: 'Ubuntu', sans-serif !important;
+}
+
+/* Start books */
+.books {
+  .content {
+    header {
+      border: 2px solid #000000;
+      border-width: 0 2px;
+      width: 20rem;
+    }
+    .book {
+      margin-bottom: 4rem;
+      img {
+        border: 1px solid #a1a1a1;
+        padding: 0.2rem;
+        width: 10rem;
+        height: 15rem;
+        transition: transform 0.2s linear;
+        -webkit-transition: transform 0.2s linear;
+        -moz-transition: transform 0.2s linear;
+        cursor: pointer;
+        &:hover {
+          transform: rotate(-20deg) scale(1.1);
+          -webkit-transform: rotate(-20deg) scale(1.1);
+          -moz-transform: rotate(-20deg) scale(1.1);
+        }
+      }
+    }
+  }
+}
+/* End books */
+
+/* Start contact */
+.contact {
+  font-family: 'Russo One', sans-serif !important;
+  .background-cover {
+    background: url('./assets/wavey-cover.svg') no-repeat top right;
+    background-size: cover;
+    z-index: -1;
+  }
+  .contact-form {
+    color: #365fa0;
+    .wrapper {
+      svg {
+        text {
+          animation: stroke 5s infinite alternate;
+          -webkit-animation: stroke 5s infinite alternate;
+          stroke-width: 2;
+          stroke: #365fa0;
+          font-size: 4rem;
+        }
+      }
+    }
+  }
+}
+/* End contact */
+
+/* Default Classes */
+.zIndex {
+  z-index: -1 !important;
+}
+/* Default Classes */
+
+/* Start Keyframes */
+@keyframes stroke {
+  0% {
+    fill: rgba(72, 138, 204, 0);
+    stroke: rgba(54, 95, 160, 1);
+    stroke-dashoffset: 25%;
+    stroke-dasharray: 0 50%;
+    stroke-width: 2;
+  }
+  70% {
+    fill: rgba(72, 138, 204, 0);
+    stroke: rgba(54, 95, 160, 1);
+  }
+  80% {
+    fill: rgba(72, 138, 204, 0);
+    stroke: rgba(54, 95, 160, 1);
+    stroke-width: 3;
+  }
+  100% {
+    fill: rgba(72, 138, 204, 1);
+    stroke: rgba(54, 95, 160, 0);
+    stroke-dashoffset: -25%;
+    stroke-dasharray: 50% 0;
+    stroke-width: 0;
+  }
+}
+
+/* Start Media Queries */
+@media screen and (max-width: 576px) {
+  /* Start Home */
+  .home {
+    /* Start Header */
+    .header {
+      .sh-1 {
+        left: -7rem !important;
+      }
+      .sh-2 {
+        left: -2rem !important;
+      }
+      .sh-3,
+      .sh-4,
+      .sh-5 {
+        display: none;
+      }
+    }
+    /* End Header */
+
+    /* Start Welcome */
+    .welcome {
+      height: 13rem !important;
+      .content {
+        div {
+          padding: 1.5rem 1rem 1rem;
+          span {
+            font-size: 2rem;
+          }
+          header {
+            font-size: 1.5rem;
+          }
+          p {
+            font-size: 1rem;
+            color: #a1a1a1;
+          }
+        }
+      }
+    }
+    /* End Welcome */
+    /* Start About */
+    .about {
+      .content {
+        .section-1,
+        .section-2,
+        .section-3 {
+          .col-6 {
+            p {
+              font-size: 0.75rem;
+            }
+            img {
+              width: 13rem;
+              height: 13rem;
+            }
+          }
+        }
+      }
+    }
+    /* End About */
+    /* Start Best Seller */
+    .best-seller-section {
+      padding-bottom: 0;
+      margin-top: 2rem;
+      .content {
+        header {
+          width: 18rem;
+          font-size: 1.5rem !important;
+        }
+        .books {
+          margin-top: 4rem;
+          display: block !important;
+          .book {
+            width: 12rem;
+            height: 17rem;
+            margin: 2rem auto;
+          }
+        }
+      }
+    }
+    /* End Best Seller */
+    /* Start Join */
+    .join {
+      padding: 0 !important;
+      header {
+        width: 9rem;
+      }
+      .content {
+        padding-top: 5rem 0 0 !important;
+        .cover {
+          img {
+            width: 10rem;
+            height: 10rem;
+          }
+        }
+      }
+    }
+    /* End Join */
+    /* Start Copyrights */
+    .footer {
+      margin: 0 !important;
+      padding: 0 !important;
+      height: 4rem;
+      .col-6 {
+        font-size: 0.9rem !important;
+        a {
+          font-size: 0.9rem;
+          width: 50% !important;
+        }
+      }
+    }
+    /* End Copyrights */
+  }
+  /* End Home */
+
+  /* Start Login */
+  .login {
+    .content {
+      .form {
+        .login-form {
+          header {
+            margin-top: 2rem !important;
+          }
+          input {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+  /* End Login */
+  /* Start books */
+  .books {
+    overflow: hidden;
+    .content {
+      header {
+        width: 15rem;
+      }
+      .row {
+        display: inline-block !important;
+        .book {
+          margin: 0 auto;
+          width: 48%;
+          display: inline-flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          img {
+            width: 10rem;
+            height: 15rem;
+          }
+          .btn {
+            width: 10rem !important;
+            margin-bottom: 3rem;
+          }
+        }
+      }
+    }
+  }
+  /* End books */
+  /* Start contact */
+  .contact {
+    .contact-form {
+      .wrapper {
+        svg {
+          text {
+            font-size: 2.3rem;
+          }
+        }
+      }
+    }
+  }
+  /* End contact */
+}
+
+// Tablet 768px
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  /* Start Home */
+  .home {
+    /* Start Header */
+    .header {
+      .sh-1 {
+        left: 0rem !important;
+      }
+      .sh-2 {
+        left: 7rem !important;
+      }
+      .sh-3 {
+        left: 14rem !important;
+      }
+      .sh-4,
+      .sh-5 {
+        display: none;
+      }
+    }
+    /* End Header */
+
+    /* Start Welcome */
+    .welcome {
+      height: 24rem !important;
+      .content {
+        div {
+          span {
+            font-size: 3rem;
+          }
+          header {
+            font-size: 2rem;
+          }
+          p {
+            font-size: 1rem;
+            color: #a1a1a1;
+          }
+        }
+      }
+    }
+    /* End Welcome */
+    /* Start About */
+    .about {
+      .content {
+        .section-1,
+        .section-2,
+        .section-3 {
+          .col-6 {
+            p {
+              font-size: 0.75rem;
+            }
+            img {
+              width: 13rem;
+              height: 13rem;
+            }
+          }
+        }
+      }
+    }
+    /* End About */
+    /* Start Best Seller */
+    .best-seller-section {
+      padding-bottom: 0;
+      margin-top: 0;
+      .content {
+        header {
+          width: 18rem;
+          font-size: 1.5rem !important;
+        }
+        .books {
+          margin-top: 4rem;
+          display: block !important;
+          .book {
+            width: 12rem;
+            height: 17rem;
+            margin: 2rem auto;
+          }
+        }
+      }
+    }
+    /* End Best Seller */
+    /* Start Join */
+    .join {
+      padding: 0 !important;
+      header {
+        width: 9rem;
+      }
+      .content {
+        padding-top: 5rem 0 0 !important;
+        .cover {
+          img {
+            width: 10rem;
+            height: 10rem;
+          }
+        }
+      }
+    }
+    /* End Join */
+    /* Start Copyrights */
+    .footer {
+      margin: 0 !important;
+      padding: 0 !important;
+      height: 4rem;
+      .col-6 {
+        font-size: 0.9rem !important;
+        a {
+          font-size: 0.9rem;
+          width: 50% !important;
+        }
+      }
+    }
+    /* End Copyrights */
+  }
+  /* End Home */
+
+  /* Start Login */
+  .login {
+    .content {
+      padding-bottom: 2rem;
+      .form {
+        .login-form {
+          header {
+            margin-top: 2rem !important;
+          }
+          input {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+  /* End Login */
+  /* Start books */
+  .books {
+    overflow: hidden;
+    .content {
+      header {
+        width: 20rem;
+      }
+      .row {
+        display: inline-block !important;
+        .book {
+          margin: 0 auto;
+          width: 48%;
+          display: inline-flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          img {
+            width: 10rem;
+            height: 15rem;
+          }
+          .btn {
+            width: 10rem !important;
+            margin-bottom: 3rem;
+          }
+        }
+      }
+    }
+  }
+  /* End books */
+  /* Start contact */
+  .contact {
+    .contact-form {
+      .wrapper {
+        svg {
+          text {
+            font-size: 4rem;
+          }
+        }
+      }
+    }
+  }
+  /* End contact */
+}
+
+// Media Query for laptops
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  /* Start Home */
+  .home {
+    /* Start Header */
+    .header {
+      .sh-1 {
+        left: 5rem !important;
+      }
+      .sh-2 {
+        left: 15rem !important;
+      }
+      .sh-3 {
+        left: 25rem !important;
+      }
+      .sh-4,
+      .sh-5 {
+        display: none;
+      }
+    }
+    /* End Header */
+
+    /* Start Welcome */
+    .welcome {
+      height: 32rem !important;
+      .content {
+        div {
+          span {
+            font-size: 4rem;
+          }
+          header {
+            font-size: 3rem;
+          }
+          p {
+            font-size: 2rem;
+          }
+        }
+      }
+    }
+    /* End Welcome */
+    /* Start About */
+    .about {
+      .content {
+        .section-1,
+        .section-2,
+        .section-3 {
+          .col-6 {
+            p {
+              font-size: 1rem;
+            }
+            img {
+              width: 25rem;
+              height: 25rem;
+            }
+          }
+        }
+      }
+    }
+    /* End About */
+    /* Start Best Seller */
+    .best-seller-section {
+      padding-bottom: 0;
+      margin-top: 2.5rem;
+      .content {
+        header {
+          width: 22rem;
+          font-size: 2rem !important;
+        }
+        .books {
+          margin-top: 4rem;
+          .book {
+            width: 15rem;
+            height: 20rem;
+            margin: 2rem auto;
+          }
+        }
+      }
+    }
+    /* End Best Seller */
+    /* Start Join */
+    .join {
+      padding: 0 !important;
+      margin-top: 5rem;
+      header {
+        width: 15rem;
+      }
+      .content {
+        padding: 8rem 0 !important;
+        .cover {
+          img {
+            width: 20rem;
+            height: 20rem;
+          }
+        }
+      }
+    }
+    /* End Join */
+    /* Start Copyrights */
+    .footer {
+      margin: 0 !important;
+      padding: 0 !important;
+      height: 4rem;
+      .col-6 {
+        font-size: 1.2rem !important;
+        a {
+          font-size: 1.2rem;
+          width: 25% !important;
+        }
+      }
+    }
+    /* End Copyrights */
+  }
+  /* End Home */
+
+  /* Start Login */
+  .login {
+    .content {
+      padding-bottom: 2rem;
+      .form {
+        .login-form {
+          header {
+            margin-top: 2rem !important;
+          }
+          input {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+  /* End Login */
+  /* Start books */
+  .books {
+    overflow: hidden;
+    .content {
+      header {
+        width: 20rem;
+      }
+      .row {
+        display: inline-block !important;
+        .book {
+          margin: 0 auto;
+          width: 48%;
+          display: inline-flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          img {
+            width: 10rem;
+            height: 15rem;
+          }
+          .btn {
+            width: 10rem !important;
+            margin-bottom: 3rem;
+          }
+        }
+      }
+    }
+  }
+  /* End books */
+  /* Start contact */
+  .contact {
+    .contact-form {
+      .wrapper {
+        svg {
+          text {
+            font-size: 4rem;
+          }
+        }
+      }
+    }
+  }
+  /* End contact */
+}

@@ -837,3 +837,156 @@ body {
   }
   /* End contact */
 }
+
+// Big Screens
+@media screen and (min-width: 1025px) and (max-width: 1680px) {
+  /* Start Home */
+  .home {
+    /* Start Header */
+    .header {
+      .sh-1 {
+        left: 10rem !important;
+      }
+      .sh-2 {
+        left: 25rem !important;
+      }
+      .sh-3 {
+        left: 40rem !important;
+      }
+      .sh-4,
+      .sh-5 {
+        display: none;
+      }
+    }
+    /* End Header */
+
+    /* Start Welcome */
+    .welcome {
+      height: 52rem !important;
+      .content {
+        div {
+          span {
+            font-size: 5rem;
+          }
+          header {
+            font-size: 3.5rem;
+          }
+          p {
+            font-size: 2.5rem;
+          }
+        }
+      }
+    }
+    /* End Welcome */
+    /* Start About */
+    .about {
+      .content {
+        .section-1,
+        .section-2,
+        .section-3 {
+          .col-6 {
+            p {
+              font-size: 1.2rem;
+            }
+            img {
+              width: 25rem;
+              height: 25rem;
+            }
+          }
+        }
+      }
+    }
+    /* End About */
+    /* Start Best Seller */
+    .best-seller-section {
+      .content {
+        header {
+          width: 35rem;
+          font-size: 3rem !important;
+        }
+      }
+    }
+    /* End Best Seller */
+    /* Start Join */
+    .join {
+      header {
+        width: 12rem;
+      }
+      .content {
+        .cover {
+          img {
+            width: 15rem;
+            height: 15rem;
+          }
+        }
+      }
+    }
+    /* End Join */
+    /* Start Copyrights */
+    .footer {
+      .col-6 {
+        font-size: 1.2rem !important;
+        a {
+          font-size: 1.2rem;
+          width: 15% !important;
+        }
+      }
+    }
+    /* End Copyrights */
+  }
+  /* End Home */
+
+  /* Start Login */
+  .login {
+    .content {
+      padding-bottom: 2rem;
+      .form {
+        .login-form {
+          header {
+            margin-top: 2rem !important;
+          }
+          input {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+  /* End Login */
+  /* Start books */
+  .books {
+    overflow: hidden;
+    .content {
+      header {
+        width: 20rem;
+      }
+      .row {
+        .book {
+          img {
+            width: 10rem;
+            height: 15rem;
+          }
+          .btn {
+            width: 10rem !important;
+            margin-bottom: 3rem;
+          }
+        }
+      }
+    }
+  }
+  /* End books */
+  /* Start contact */
+  .contact {
+    height: 100vh;
+    .contact-form {
+      .wrapper {
+        svg {
+          text {
+            font-size: 4rem;
+          }
+        }
+      }
+    }
+  }
+  /* End contact */
+}

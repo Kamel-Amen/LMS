@@ -5,6 +5,7 @@ import Register from './components/Register';
 import Account from './components/Account';
 import Books from './components/Books';
 import Contact from './components/Contact';
+import Settings from './components/Settings';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
@@ -23,6 +24,7 @@ function App() {
       <Route path='/account' element={<Account />} />
       <Route path='/books' element={<Books />} />
       <Route path='/contact' element={<Contact />} />
+      <Route path='/settings' element={<Settings />} />
     </Routes>
   );
 }

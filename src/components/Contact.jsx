@@ -1,15 +1,18 @@
 // import React from 'react';
 import { NavLink } from 'react-router-dom';
 import AccountHeader from './AccountHeader';
+import { useSelector } from 'react-redux';
 
 const Contact = () => {
+  const { user } = useSelector((store) => store.user);
+
   return (
     <div className='home contact w-100 position-relative'>
       <div
         className='background-cover position-absolute w-100 h-100'
         data-aos='zoom-in'
       ></div>
-      <AccountHeader />
+      <AccountHeader user={user} />
       <div className='contact-form d-flex flex-column justify-content-center align-items-center w-100 h-100 py-3'>
         <div className='wrapper w-50'>
           <svg className='w-100 h-100'>

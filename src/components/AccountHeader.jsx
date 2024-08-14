@@ -1,14 +1,16 @@
+/* eslint-disable react/prop-types */
 // import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { NavLink } from 'react-router-dom';
-import { faBookOpenReader } from '@fortawesome/free-solid-svg-icons';
+import { faBookOpenReader, faUser } from '@fortawesome/free-solid-svg-icons';
+import { toast } from 'react-toastify';
 import shape1 from '../assets/shapes/shape1.svg';
-import { toastSuccess } from './services/reports';
 
-const AccountHeader = () => {
-  const handleClick = () => {
-    toastSuccess('Logout Successfully !');
+const AccountHeader = ({ user }) => {
+  const handleLogout = () => {
+    toast(`Logged out Successfully !`);
   };
+  const { username } = user;
 
   return (
     <nav
@@ -70,12 +72,22 @@ const AccountHeader = () => {
             </li>
             <li className='nav-item'>
               <NavLink
-                className='register-btn nav-link text-white bg-dark px-4 rounded'
+                className='register-btn nav-link text-white bg-dark px-4 rounded me-3'
                 aria-current='page'
                 to='/'
-                onClick={handleClick}
+                onClick={handleLogout}
               >
                 Logout
+              </NavLink>
+            </li>
+            <li className='nav-item'>
+              <NavLink
+                className='btn-login nav-link text-white bg-dark px-4 rounded'
+                aria-current='page'
+                to='/settings'
+              >
+                <FontAwesomeIcon icon={faUser} />{' '}
+                <span className='ms-2'>{username}</span>
               </NavLink>
             </li>
           </ul>

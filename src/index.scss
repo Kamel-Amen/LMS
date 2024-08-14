@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton+SC&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 /* End Fonts */
 /* ================================================== */
 /* Start Body */
@@ -280,9 +281,53 @@ body {
 }
 /* End contact */
 
+/* Start User Settings */
+.settings {
+  font-family: 'Poppins', sans-serif !important;
+  .content {
+  }
+}
+/* End User Settings */
+
 /* Default Classes */
 .zIndex {
   z-index: -1 !important;
+}
+
+#loading-indicator {
+  width: 100vw !important;
+  height: 100vh !important;
+  background: white;
+  z-index: 9999;
+  .lds-hourglass {
+    width: 80px;
+    height: 80px;
+    &::after {
+      content: ' ';
+      display: block;
+      border-radius: 50%;
+      width: 0;
+      height: 0;
+      margin: 6px;
+      box-sizing: border-box;
+      border: 26px solid #333;
+      border-color: orange transparent orange transparent;
+      animation: lds-hourglass 1.2s infinite;
+    }
+  }
+}
+@keyframes lds-hourglass {
+  0% {
+    transform: rotate(0);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+  50% {
+    transform: rotate(900deg);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  100% {
+    transform: rotate(1800deg);
+  }
 }
 /* Default Classes */
 
@@ -329,6 +374,20 @@ body {
       .sh-4,
       .sh-5 {
         display: none;
+      }
+      .container-fluid {
+        .navbar-collapse {
+          .navbar-nav {
+            .nav-item {
+              margin: 0.25rem 0 !important;
+              padding: 0 !important;
+              text-align: center;
+            }
+            .nav-item:last-of-type {
+              margin-right: 1rem !important;
+            }
+          }
+        }
       }
     }
     /* End Header */
@@ -505,6 +564,20 @@ body {
       .sh-4,
       .sh-5 {
         display: none;
+      }
+      .container-fluid {
+        .navbar-collapse {
+          .navbar-nav {
+            .nav-item {
+              margin: 0.25rem 0 !important;
+              padding: 0 !important;
+              text-align: center;
+            }
+            .nav-item:last-of-type {
+              margin-right: 1rem !important;
+            }
+          }
+        }
       }
     }
     /* End Header */
@@ -977,7 +1050,6 @@ body {
   /* End books */
   /* Start contact */
   .contact {
-    height: 100vh;
     .contact-form {
       .wrapper {
         svg {

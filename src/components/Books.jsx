@@ -5,8 +5,11 @@ import Copyrights from './Home Sec/Copyrights';
 import { NavLink } from 'react-router-dom';
 import shape1 from '../assets/shapes/shape5.svg';
 import shape2 from '../assets/shapes/shape3.svg';
+import { useSelector } from 'react-redux';
 
 const Books = () => {
+  const { user } = useSelector((store) => store.user);
+
   let books = [];
   const booksNumber = 10;
   for (let i = 0; i < booksNumber; i++) {
@@ -15,7 +18,7 @@ const Books = () => {
 
   return (
     <div className='books home'>
-      <AccountHeader />
+      <AccountHeader user={user} />
       <section className='content container text-center position-relative py-5'>
         <img
           src={shape1}
